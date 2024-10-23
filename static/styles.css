@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fdfdfd; /* Color de fondo suave */
+}
+
+#inicio {
+    background: linear-gradient(rgba(255, 80, 128, .7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centramos verticalmente */
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #ff5080;
+    font-size: 2.5em; /* Aumentamos el tamaño del texto */
+    transition: transform 0.3s ease; /* Efecto de transformación */
+}
+
+#inicio .contenido header .contenido-header h1:hover {
+    transform: scale(1.1); /* Efecto de hover */
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 600; /* Aumentamos el peso de la fuente */
+    padding: 8px 15px; /* Añadimos padding */
+    border-radius: 20px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    background-color: #ff5080; /* Fondo al pasar el ratón */
+    color: #fff;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease; /* Efecto de transformación */
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    transform: scale(1.2); /* Efecto de hover */
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centrar texto */
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 20px; /* Aumentar el tamaño */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff5080; /* Color vibrante */
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 60px; /* Aumentar el tamaño */
+    margin-bottom: 25px;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 30px;
+    color: #ff5080;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+    color: #f5f5f5; /* Color más claro para el texto */
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255, 80, 128, 0.7); /* Fondo más vibrante */
+    transition: background-color 0.5s, transform 0.5s; /* Transición suave */
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #ff5080; /* Cambiar el color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+#sobremi, #sobremi1, #sobremi2 {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    transition: transform 0.5s ease; /* Efecto de hover */
+}
+
+#sobremi .contenedor-foto img:hover {
+    transform: scale(1.05); /* Efecto de escalado */
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 24px; /* Aumentar tamaño */
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 36px; /* Aumentar tamaño */
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: #ff5080;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 20px; /* Aumentar tamaño */
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 16px; /* Aumentar tamaño */
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: background-color 0.5s, color 0.5s; /* Transición suave */
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
+
+.quienes {
+    text-align: center;
+    background-color: rgba(243, 235, 235, 0.3);
+    border-radius: 2em;
+    padding: 5em 0; /* Ajustar espacio */
+}
+
+.h1 {
+    color: #111135;
+    font-size: 3em;
+}
+
+.h2 {
+    color: #111135;
+    font-size: 3em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+.p {
+    padding-top: 2em;
+}
+
+/* *********************/
+/* seccion S E R V I C I O S */
+/* *********************/
+
+#servicio {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#servicio .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#servicio .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+#servicio .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: box-shadow 0.5s, transform 0.5s; /* Efecto de transición */
+}
+
+#servicio .fila .servicio:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+#servicio .fila .servicio img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#servicio .fila .servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff5080; /* Color vibrante */
+}
+
+#servicio .fila .servicio p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #565656;
+}
+
+#servicio .fila .servicio a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5080; /* Color de fondo vibrante */
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+#servicio .fila .servicio a:hover {
+    background-color: #d35400; /* Cambiar color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+/* * SECCIÓN  DE CONTACTO * */
+
+#contacto {
+    padding: 50px 15px;
+    background-color: #111135;
+    color: #fff;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contacto .formulario {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto .formulario input,
+#contacto .formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transición para el borde */
+}
+
+#contacto .formulario input:focus,
+#contacto .formulario textarea:focus {
+    border-color: #ff5080; /* Cambiar color al enfocar */
+}
+
+#contacto .formulario button {
+    padding: 15px 25px;
+    background-color: #ff5080; /* Color vibrante */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+#contacto .formulario button:hover {
+    background-color: #d35400; /* Color al pasar el ratón */
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111135;
+    color: #fff;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}

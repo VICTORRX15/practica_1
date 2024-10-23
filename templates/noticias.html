@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Pil Andina El Alto</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img src="../static/images/logopil.jpg" alt="Logo Pil Andina" style="width: 100px; height: auto; margin-right: 15px;">
+                    <h1>PIL ANDINA EL ALTO</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="index.html" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="quienes.html" onclick="seleccionar(this)">QUIENES SOMOS</a></li>
+                            <li><a href="servicio.html" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="noticias.html" onclick="seleccionar(this)">NOTICIAS</a></li>
+                            <li><a href="contacto.html" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <h2>NOTICIAS</h2>
+                <a href="#servicios">Ir a noticias</a>
+            </div>
+        </div>
+    </section>
+    <section id="servicios">
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Octubre 2024</h4>
+                <hr>
+                <ul class="servicios-tag">
+                </ul>
+                <p>Los productos de la materia prima van en acenso.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Septiembre 2024</h4>
+                <hr>
+                <ul class="servicios-tag">
+                </ul>
+                <p> los juguiros pil suben a 1.5 Bs.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Agosto 2024</h4>
+                <hr>
+                <ul class="servicios-tag">
+                </ul>
+                <p>La sequia afecta a la produccion de leche ya que las vacas no producen lo suficiente.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
